@@ -22,7 +22,7 @@ export default function Footer() {
             <GithubIcon />
           </a>
           <a
-            href="mailto:shubhr6888@gmail.com"
+            href="mailto:shubhr457@gmail.com"
             className="text-[var(--text-muted)] hover:text-[var(--accent-primary)] transition-colors"
           >
             <EmailIcon />

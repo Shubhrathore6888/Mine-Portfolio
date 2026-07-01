@@ -17,7 +17,14 @@ export default function Home() {
   // ── Global UI state ──────────────────────────────────────────────────────
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window === "undefined") return true;
+    const stored = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+    return stored ? stored === "dark" : prefersDark;
+  });
   const [activeSection, setActiveSection] = useState("");
   const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -34,14 +41,8 @@ export default function Home() {
 
   // ── Theme ─────────────────────────────────────────────────────────────
   useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)",
-    ).matches;
-    const dark = stored ? stored === "dark" : prefersDark;
-    setIsDark(dark);
-    document.documentElement.dataset.theme = dark ? "dark" : "light";
-  }, []);
+    document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  }, [isDark]);
 
   const toggleTheme = () => {
     const next = !isDark;
