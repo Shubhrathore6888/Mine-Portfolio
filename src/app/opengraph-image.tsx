@@ -198,7 +198,7 @@ export default async function OGImage() {
           display: "flex",
         }}
       >
-        shubh-dev.vercel.app
+        0xshubh.me
       </div>
     </div>,
     {

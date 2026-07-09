@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const SITE_URL = "https://shubh-dev.vercel.app";
+const SITE_URL = "https://0xshubh.me";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
