@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shubh Rathore Portfolio
+
+Personal portfolio website for **Shubh Rathore**, a backend developer focused on scalable APIs, production systems, real-time backends, and blockchain integrations.
+
+Live site: [https://0xshubh.me](https://0xshubh.me)
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) 16
+- [React](https://react.dev/) 19
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- Next.js App Router
+- Dynamic Open Graph image generation
+
+## Features
+
+- Responsive portfolio landing page
+- Dark/light theme toggle
+- Smooth scrolling navigation
+- Active section highlighting
+- Projects filtering by category
+- SEO metadata, sitemap, and robots.txt
+- Custom Open Graph image
+- Mailto-based contact form
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev
+```
 
-## Learn More
+Start the local development server.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a production build.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run start
+```
 
-## Deploy on Vercel
+Start the production server after building.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run ESLint checks.
+
+## Project Structure
+
+```txt
+src/app/
+├── components/       # Portfolio UI sections and reusable components
+├── data/             # Portfolio content, skills, projects, and links
+├── globals.css       # Global styles, theme variables, and animations
+├── layout.tsx        # Metadata, fonts, theme bootstrap, and root layout
+├── page.tsx          # Main portfolio page
+├── opengraph-image.tsx
+├── robots.ts
+└── sitemap.ts
+```
+
+## Updating Portfolio Content
+
+Most portfolio content is managed in:
+
+```txt
+src/app/data/portfolio.ts
+```
+
+Update this file to edit:
+
+- Skills
+- Experience
+- Projects
+- Navigation links
+- Resume URL
+
+## Deployment
+
+The site is configured for the custom domain:
+
+```txt
+0xshubh.me
+```
+
+SEO metadata, sitemap, robots.txt, and Open Graph branding use:
+
+```txt
+https://0xshubh.me
+```
