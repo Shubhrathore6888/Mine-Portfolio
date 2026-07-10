@@ -78,7 +78,6 @@ export default async function OGImage() {
                 display: "flex",
               }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={base64}
                 width={220}

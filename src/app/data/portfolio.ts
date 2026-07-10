@@ -206,9 +206,8 @@ export const projects: Project[] = [
 // ─── Nav Links ────────────────────────────────────────────────────────────────
 
 export const navLinks: NavLink[] = [
+  { name: "Why me", href: "#why-me" },
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
+  { name: "Work", href: "#work" },
   { name: "Contact", href: "#contact" },
 ];
