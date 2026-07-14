@@ -106,7 +106,7 @@ export const projects: Project[] = [
       "Docker",
       "pydantic-settings",
     ],
-    category: "Backend",
+    category: "Full Stack",
     github: "https://github.com/Shubhr457/Smart-Chat",
     ongoing: true,
     highlight: "In Progress",
@@ -173,20 +173,6 @@ export const projects: Project[] = [
     live: "https://terrava-platform.ai",
   },
   {
-    title: "Real Estate Marketplace (Solana)",
-    description:
-      "Marketplace on Solana with ownership transfers, bidding, governance, and backend integration.",
-    tech: ["Solana", "Rust", "Anchor", "TypeScript", "PostgreSQL"],
-    category: "Blockchain",
-  },
-  {
-    title: "Crowdfunding + Vesting + Staking",
-    description:
-      "Upgradeable contracts: caps, vesting, claims, and multi-stage fundraising.",
-    tech: ["Solidity", "OpenZeppelin", "Hardhat", "Ethers.js"],
-    category: "DeFi",
-  },
-  {
     title: "Decride — Smart Contracts",
     description:
       "Solidity 0.8.26 smart contract suite for the Decride ride-sharing platform on Polygon Amoy. Includes RIDE ERC-20 token, ride escrow with USD oracle, driver staking, reputation registry, dispute resolution, DAO governor, and token vesting with factory pattern. Built with Hardhat + OpenZeppelin and a full test suite.",
@@ -195,11 +181,12 @@ export const projects: Project[] = [
     github: "https://github.com/Shubhr457/Decride-Contracts",
   },
   {
-    title: "Founoun NFT Marketplace",
+    title: "Funoon NFT Marketplace",
     description:
       "ERC-1155 marketplace with lazy minting, royalties, emergency controls, and backend integration.",
     tech: ["Solidity", "ERC-1155", "Node.js", "MongoDB"],
     category: "NFT",
+    live: "https://funoon.io/",
   },
 ];
 
